@@ -1,0 +1,34 @@
+<%@ jet package="dsml.struts.templates" imports=" java.lang.reflect.* dsml.struts.toolbox.* " class="DTOListTemplate" startTag="<$" endTag="$>" %>
+
+<$ Class<?> arg = (Class<?>) argument; $>
+package dsml.struts.domain.dao;
+import <$=arg.getName()$>;
+import java.io.Serializable;
+import java.util.List;
+
+/*
+* DTOList<$=arg.getSimpleName()$> 
+*/
+
+public class DTOList<$=arg.getSimpleName()$> implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
+	private List<<$=arg.getSimpleName()$>> listOf<$=arg.getSimpleName()$> ;
+	private String error;
+	
+	
+	public List<<$=arg.getSimpleName()$> > getListOf<$=arg.getSimpleName()$> () {
+		return listOf<$=arg.getSimpleName()$> ;
+	}
+	public void setListOf<$=arg.getSimpleName()$> (List<<$=arg.getSimpleName()$> > listOf<$=arg.getSimpleName()$> ) {
+		this.listOf<$=arg.getSimpleName()$>  = listOf<$=arg.getSimpleName()$> ;
+	}
+	public String getError() {
+		return error;
+	}
+	public void setError(String error) {
+		this.error = error;
+	}
+
+}

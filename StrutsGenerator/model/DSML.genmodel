@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/StrutsProjectNew/src" modelPluginID="StrutsProjectNew"
+    modelName="DSML" importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0"
+    copyrightFields="false">
+  <foreignModel>DSML.ecore</foreignModel>
+  <genPackages prefix="Dsml" disposableProviderFactory="true" ecorePackage="DSML.ecore#/">
+    <nestedGenPackages prefix="Web" basePackage="dsml" disposableProviderFactory="true"
+        fileExtensions="dsml" ecorePackage="DSML.ecore#//web">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="DSML.ecore#//web/Type">
+        <genEnumLiterals ecoreEnumLiteral="DSML.ecore#//web/Type/int"/>
+        <genEnumLiterals ecoreEnumLiteral="DSML.ecore#//web/Type/float"/>
+      </genEnums>
+      <genClasses ecoreClass="DSML.ecore#//web/Website">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DSML.ecore#//web/Website/Pages"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/Website/name"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/Page">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/Page/title"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DSML.ecore#//web/Page/Form"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DSML.ecore#//web/Page/Texts"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/Page/name"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DSML.ecore#//web/Page/Links"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="DSML.ecore#//web/Field">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DSML.ecore#//web/Field/Validator"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/TextField">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/TextField/size"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/TextField/maxlength"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/PasswordField">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/PasswordField/size"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/PasswordField/maxlength"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/Label"/>
+      <genClasses image="false" ecoreClass="DSML.ecore#//web/Button"/>
+      <genClasses ecoreClass="DSML.ecore#//web/RadioButton"/>
+      <genClasses ecoreClass="DSML.ecore#//web/CheckBox"/>
+      <genClasses ecoreClass="DSML.ecore#//web/SubmitButton"/>
+      <genClasses ecoreClass="DSML.ecore#//web/CancelButton"/>
+      <genClasses ecoreClass="DSML.ecore#//web/Item">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/Item/value"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/Select">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/Select/size"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="DSML.ecore#//web/ListField">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DSML.ecore#//web/ListField/Items"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/TextArea">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/TextArea/cols"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/TextArea/rows"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/ResetButton"/>
+      <genClasses ecoreClass="DSML.ecore#//web/Link">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference DSML.ecore#//web/Link/LinkedPage"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/Link/value"/>
+        <genOperations ecoreOperation="DSML.ecore#//web/Link/accept">
+          <genParameters ecoreParameter="DSML.ecore#//web/Link/accept/visitor"/>
+        </genOperations>
+      </genClasses>
+      <genClasses image="false" ecoreClass="DSML.ecore#//web/FormElement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/FormElement/name"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/FormElement/value"/>
+        <genOperations ecoreOperation="DSML.ecore#//web/FormElement/accept">
+          <genParameters ecoreParameter="DSML.ecore#//web/FormElement/accept/visitor"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/Hidden"/>
+      <genClasses ecoreClass="DSML.ecore#//web/Form">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DSML.ecore#//web/Form/FormElements"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/Form/action"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DSML.ecore#//web/Form/Success"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DSML.ecore#//web/Form/Error"/>
+        <genOperations ecoreOperation="DSML.ecore#//web/Form/accept">
+          <genParameters ecoreParameter="DSML.ecore#//web/Form/accept/visitor"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/Text">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/Text/value"/>
+        <genOperations ecoreOperation="DSML.ecore#//web/Text/accept">
+          <genParameters ecoreParameter="DSML.ecore#//web/Text/accept/visitor"/>
+        </genOperations>
+      </genClasses>
+      <genClasses image="false" ecoreClass="DSML.ecore#//web/Validator">
+        <genOperations ecoreOperation="DSML.ecore#//web/Validator/accept">
+          <genParameters ecoreParameter="DSML.ecore#//web/Validator/accept/visitor"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/DateValidator"/>
+      <genClasses ecoreClass="DSML.ecore#//web/EmailValidator"/>
+      <genClasses ecoreClass="DSML.ecore#//web/Required"/>
+      <genClasses ecoreClass="DSML.ecore#//web/TimeValidator"/>
+      <genClasses ecoreClass="DSML.ecore#//web/URLValidator"/>
+      <genClasses ecoreClass="DSML.ecore#//web/TypeValidator">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/TypeValidator/type"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/GreaterThanValidator">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/GreaterThanValidator/value"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/LessThanValidator">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/LessThanValidator/value"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/BetweenValidator">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/BetweenValidator/valueL"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/BetweenValidator/valueG"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/RegexValidator">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/RegexValidator/regex"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/StringLengthValidator">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/StringLengthValidator/min"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//web/StringLengthValidator/max"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/Success">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference DSML.ecore#//web/Success/SuccessPage"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//web/Error">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference DSML.ecore#//web/Error/ErrorPage"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Visitor" basePackage="dsml" disposableProviderFactory="true"
+        generateExampleClass="false" multipleEditorPages="false" generateModelWizard="false"
+        ecorePackage="DSML.ecore#//visitor">
+      <genClasses ecoreClass="DSML.ecore#//visitor/JSPVisitor"/>
+      <genClasses image="false" ecoreClass="DSML.ecore#//visitor/Visitor">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DSML.ecore#//visitor/Visitor/tag"/>
+      </genClasses>
+      <genClasses ecoreClass="DSML.ecore#//visitor/ResourceVisitor"/>
+      <genClasses ecoreClass="DSML.ecore#//visitor/POJOVisitor"/>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" xmlns:gmfmap="http://www.eclipse.org/gmf/2008/mappings" xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:simplemap="http://org.msl.simple.gmfmap/simplemappings_1.1">
+  <simplemap:SimpleMapping xmi:id="_wCUYwC0mEeKRef_gmMQeuA">
+    <children xmi:type="simplemap:SimpleTopNode" xmi:id="_As5kQC1qEeKRef_gmMQeuA">
+      <nodeReference xmi:type="gmfmap:TopNodeReference" href="DSML.gmfmap#//@nodes.0"/>
+      <children xmi:type="simplemap:SimpleSubNode" xmi:id="_JdBWEC1qEeKRef_gmMQeuA">
+        <nodeReference xmi:type="gmfmap:ChildReference" href="DSML.gmfmap#//@nodes.0/@ownedChild/@children.0"/>
+        <children xmi:type="simplemap:SimpleSubNode" xmi:id="_MeXnMC1qEeKRef_gmMQeuA">
+          <nodeReference xmi:type="gmfmap:ChildReference" href="DSML.gmfmap#//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0"/>
+        </children>
+        <children xmi:type="simplemap:SimpleSubNode" xmi:id="_RK0IMC1qEeKRef_gmMQeuA">
+          <nodeReference xmi:type="gmfmap:ChildReference" href="DSML.gmfmap#//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1"/>
+        </children>
+        <children xmi:type="simplemap:SimpleSubNode" xmi:id="_UQqe0C1qEeKRef_gmMQeuA">
+          <nodeReference xmi:type="gmfmap:ChildReference" href="DSML.gmfmap#//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.2"/>
+        </children>
+        <children xmi:type="simplemap:SimpleSubNode" xmi:id="_XfmgAC1qEeKRef_gmMQeuA">
+          <nodeReference xmi:type="gmfmap:ChildReference" href="DSML.gmfmap#//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.3"/>
+        </children>
+        <children xmi:type="simplemap:SimpleSubNode" xmi:id="_bf3QcC1qEeKRef_gmMQeuA">
+          <nodeReference xmi:type="gmfmap:ChildReference" href="DSML.gmfmap#//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.4"/>
+        </children>
+        <children xmi:type="simplemap:SimpleSubNode" xmi:id="_eM8sUC1rEeKRef_gmMQeuA">
+          <nodeReference xmi:type="gmfmap:ChildReference" href="DSML.gmfmap#//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.5"/>
+        </children>
+        <children xmi:type="simplemap:SimpleSubNode" xmi:id="_muRNIC1rEeKRef_gmMQeuA">
+          <nodeReference xmi:type="gmfmap:ChildReference" href="DSML.gmfmap#//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.6"/>
+        </children>
+        <children xmi:type="simplemap:SimpleSubNode" xmi:id="_pnh5QC1rEeKRef_gmMQeuA">
+          <nodeReference xmi:type="gmfmap:ChildReference" href="DSML.gmfmap#//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.7"/>
+        </children>
+        <children xmi:type="simplemap:SimpleSubNode" xmi:id="_sFiMwC1rEeKRef_gmMQeuA">
+          <nodeReference xmi:type="gmfmap:ChildReference" href="DSML.gmfmap#//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.8"/>
+        </children>
+        <children xmi:type="simplemap:SimpleSubNode" xmi:id="_wyg5QC1rEeKRef_gmMQeuA">
+          <nodeReference xmi:type="gmfmap:ChildReference" href="DSML.gmfmap#//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.9"/>
+        </children>
+        <children xmi:type="simplemap:SimpleSubNode" xmi:id="_1bhEsC1rEeKRef_gmMQeuA">
+          <nodeReference xmi:type="gmfmap:ChildReference" href="DSML.gmfmap#//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.10"/>
+        </children>
+      </children>
+      <children xmi:type="simplemap:SimpleSubNode" xmi:id="_Gg_0YC1rEeKRef_gmMQeuA">
+        <nodeReference xmi:type="gmfmap:ChildReference" href="DSML.gmfmap#//@nodes.0/@ownedChild/@children.1"/>
+      </children>
+    </children>
+    <children xmi:type="simplemap:SimpleLinkMapping" xmi:id="_itny0C3GEeKaGfEs4ePGGA" name="Success">
+      <linkMapping xmi:type="gmfmap:LinkMapping" href="DSML.gmfmap#//@links.1"/>
+    </children>
+    <children xmi:type="simplemap:SimpleLinkMapping" xmi:id="_uW48AC3GEeKaGfEs4ePGGA" name="Error">
+      <linkMapping xmi:type="gmfmap:LinkMapping" href="DSML.gmfmap#//@links.2"/>
+    </children>
+    <canvas xmi:type="gmfgraph:Canvas" href="DSML.gmfgraph#ui"/>
+    <palette xmi:type="gmftool:Palette" href="DSML.gmftool#/"/>
+    <mapping xmi:type="gmfmap:Mapping" href="DSML.gmfmap#/"/>
+  </simplemap:SimpleMapping>
+  <notation:Diagram xmi:id="_wD6UMC0mEeKRef_gmMQeuA" type="Simplemap" element="_wCUYwC0mEeKRef_gmMQeuA" name="DSML.simplemappings" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_As8AgC1qEeKRef_gmMQeuA" type="1001" element="_As5kQC1qEeKRef_gmMQeuA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_As8AhC1qEeKRef_gmMQeuA" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_JdNjUC1qEeKRef_gmMQeuA" type="2003" element="_JdBWEC1qEeKRef_gmMQeuA">
+        <children xmi:type="notation:DecorationNode" xmi:id="_JdNjVC1qEeKRef_gmMQeuA" type="4001"/>
+        <children xmi:type="notation:Node" xmi:id="_MeZcYC1qEeKRef_gmMQeuA" type="2003" element="_MeXnMC1qEeKRef_gmMQeuA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_MeZcZC1qEeKRef_gmMQeuA" type="4001"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_MeZcYS1qEeKRef_gmMQeuA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MeZcYi1qEeKRef_gmMQeuA" fontName="Droid Sans"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MeZcYy1qEeKRef_gmMQeuA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_RK19YC1qEeKRef_gmMQeuA" type="2003" element="_RK0IMC1qEeKRef_gmMQeuA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_RK19ZC1qEeKRef_gmMQeuA" type="4001"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_RK19YS1qEeKRef_gmMQeuA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_RK19Yi1qEeKRef_gmMQeuA" fontName="Droid Sans"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RK19Yy1qEeKRef_gmMQeuA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_UQsUAC1qEeKRef_gmMQeuA" type="2003" element="_UQqe0C1qEeKRef_gmMQeuA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_UQs7EC1qEeKRef_gmMQeuA" type="4001"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_UQsUAS1qEeKRef_gmMQeuA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_UQsUAi1qEeKRef_gmMQeuA" fontName="Droid Sans"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UQsUAy1qEeKRef_gmMQeuA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_XfoVMC1qEeKRef_gmMQeuA" type="2003" element="_XfmgAC1qEeKRef_gmMQeuA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_XfoVNC1qEeKRef_gmMQeuA" type="4001"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_XfoVMS1qEeKRef_gmMQeuA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_XfoVMi1qEeKRef_gmMQeuA" fontName="Droid Sans"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XfoVMy1qEeKRef_gmMQeuA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_bf4ekC1qEeKRef_gmMQeuA" type="2003" element="_bf3QcC1qEeKRef_gmMQeuA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_bf5FoC1qEeKRef_gmMQeuA" type="4001"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_bf4ekS1qEeKRef_gmMQeuA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_bf4eki1qEeKRef_gmMQeuA" fontName="Droid Sans"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bf4eky1qEeKRef_gmMQeuA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_eNVt4C1rEeKRef_gmMQeuA" type="2003" element="_eM8sUC1rEeKRef_gmMQeuA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_eNVt5C1rEeKRef_gmMQeuA" type="4001"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_eNVt4S1rEeKRef_gmMQeuA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_eNVt4i1rEeKRef_gmMQeuA" fontName="Droid Sans"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eNVt4y1rEeKRef_gmMQeuA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_muTCUC1rEeKRef_gmMQeuA" type="2003" element="_muRNIC1rEeKRef_gmMQeuA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_muTCVC1rEeKRef_gmMQeuA" type="4001"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_muTCUS1rEeKRef_gmMQeuA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_muTCUi1rEeKRef_gmMQeuA" fontName="Droid Sans"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_muTCUy1rEeKRef_gmMQeuA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_pnkVgC1rEeKRef_gmMQeuA" type="2003" element="_pnh5QC1rEeKRef_gmMQeuA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_pnkVhC1rEeKRef_gmMQeuA" type="4001"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_pnkVgS1rEeKRef_gmMQeuA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_pnkVgi1rEeKRef_gmMQeuA" fontName="Droid Sans"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pnkVgy1rEeKRef_gmMQeuA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_sFja4C1rEeKRef_gmMQeuA" type="2003" element="_sFiMwC1rEeKRef_gmMQeuA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_sFkB8C1rEeKRef_gmMQeuA" type="4001"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_sFja4S1rEeKRef_gmMQeuA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_sFja4i1rEeKRef_gmMQeuA" fontName="Droid Sans"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sFja4y1rEeKRef_gmMQeuA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_wyiHYC1rEeKRef_gmMQeuA" type="2003" element="_wyg5QC1rEeKRef_gmMQeuA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_wyiucC1rEeKRef_gmMQeuA" type="4001"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_wyiHYS1rEeKRef_gmMQeuA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wyiHYi1rEeKRef_gmMQeuA" fontName="Droid Sans"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wyiHYy1rEeKRef_gmMQeuA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_1bi54C1rEeKRef_gmMQeuA" type="2003" element="_1bhEsC1rEeKRef_gmMQeuA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_1bi55C1rEeKRef_gmMQeuA" type="4001"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_1bi54S1rEeKRef_gmMQeuA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_1bi54i1rEeKRef_gmMQeuA" fontName="Droid Sans"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1bi54y1rEeKRef_gmMQeuA"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_JdNjUS1qEeKRef_gmMQeuA"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_JdNjUi1qEeKRef_gmMQeuA" fontName="Droid Sans"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JdNjUy1qEeKRef_gmMQeuA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_GhBpkC1rEeKRef_gmMQeuA" type="2003" element="_Gg_0YC1rEeKRef_gmMQeuA">
+        <children xmi:type="notation:DecorationNode" xmi:id="_GhBplC1rEeKRef_gmMQeuA" type="4001"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_GhBpkS1rEeKRef_gmMQeuA"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_GhBpki1rEeKRef_gmMQeuA" fontName="Droid Sans"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GhBpky1rEeKRef_gmMQeuA"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_As8AgS1qEeKRef_gmMQeuA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_As8Agi1qEeKRef_gmMQeuA" fontName="Droid Sans"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_As8Agy1qEeKRef_gmMQeuA" x="96" width="336" height="553"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_iuD3sC3GEeKaGfEs4ePGGA" type="1002" element="_itny0C3GEeKaGfEs4ePGGA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_iuEewC3GEeKaGfEs4ePGGA" type="4004"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_iuD3sS3GEeKaGfEs4ePGGA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_iuD3si3GEeKaGfEs4ePGGA" fontName="Droid Sans"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iuD3sy3GEeKaGfEs4ePGGA" x="456" y="108"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_uW6KIC3GEeKaGfEs4ePGGA" type="1002" element="_uW48AC3GEeKaGfEs4ePGGA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_uW6xMC3GEeKaGfEs4ePGGA" type="4004"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_uW6KIS3GEeKaGfEs4ePGGA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_uW6KIi3GEeKaGfEs4ePGGA" fontName="Droid Sans"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uW6KIy3GEeKaGfEs4ePGGA" x="464" y="198"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_wD6UMS0mEeKRef_gmMQeuA"/>
+  </notation:Diagram>
+</xmi:XMI>

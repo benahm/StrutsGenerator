@@ -1,0 +1,37 @@
+<%@ jet package="dsml.struts.templates" imports="java.util.* org.eclipse.emf.common.util.* dsml.web.* dsml.struts.toolbox.*" class="StrutsConfigTemplate" startTag="<$" endTag="$>" %>
+<$ Website website = (Website) argument; $>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+<struts-config>
+
+	<form-beans>
+<$ for(Form form :Tools.getFormsFromWebsite(website)) { $>
+            <form-bean name="<$=Tools.capitalize(form.getAction())$>ActionForm" type="dsml.struts.actionForm.<$=Tools.capitalize(form.getAction())$>ActionForm" />
+<$ } $>
+	</form-beans>
+	
+	<action-mappings>
+<$ for(Page page : website.getPages()) { 
+		for(Link link:page.getLinks()){ 
+			if(link.getLinkedPage()!=null){$>
+      		  <action path="/<$= link.getLinkedPage().getName()$>" forward="/pages/<$=link.getLinkedPage().getName()$>.jsp" />
+			<$}
+		 } $>
+<$ } $>
+<$ for(Form form : Tools.getFormsFromWebsite(website)) { $>
+        <action path="/<$= form.getAction() $>" type="<$= "dsml.struts.servletAction."+Tools.capitalize(form.getAction()) $>Action"
+            name="<$=Tools.capitalize(form.getAction())$>ActionForm" scope="request" input="/pages/<$= ((Page)form.eContainer()).getName()$>.jsp">
+            <$ if(form.getSuccess()!=null) {$>
+            <forward name="success" path="/pages/<$= form.getSuccess().getSuccessPage().getName() $>.jsp" />
+            <$}$>
+            <$ if(form.getError()!=null) {$>
+            <forward name="error" path="/pages/<$= form.getError().getErrorPage().getName() $>.jsp" />
+        	<$}$>
+        </action>
+<$ } $>
+	</action-mappings>
+
+	<message-resources parameter="Resources" />
+</struts-config>

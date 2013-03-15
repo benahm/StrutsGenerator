@@ -1,0 +1,15 @@
+<%@ jet package="dsml.struts.templates" imports="java.util.* org.eclipse.emf.common.util.* dsml.struts.toolbox.* dsml.visitor.Visitor dsml.visitor.impl.* dsml.web.*" class="POJOTemplate" startTag="<$" endTag="$>" %>
+<$ Form form = (Form) argument; $>
+<$Visitor visitor=new POJOVisitorImpl("");$>
+package dsml.struts.domain;
+
+/**
+* Class <$=form.getAction()$>
+*
+*/
+
+public class <$=Tools.capitalize( form.getAction()) $> {
+
+	<$= form.accept(visitor)$>
+
+}

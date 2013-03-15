@@ -1,0 +1,35 @@
+<%@ jet package="dsml.struts.templates" imports="java.util.* org.eclipse.emf.common.util.* dsml.struts.toolbox.* dsml.visitor.Visitor dsml.visitor.impl.* dsml.web.*" class="PageTemplate" startTag="<$" endTag="$>" %>
+<$ String htmlTag="html",beanTag="bean";$>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="<$=htmlTag$>" uri="http://struts.apache.org/tags-html" %>
+<%@ taglib prefix="<$=beanTag$>" uri="http://struts.apache.org/tags-bean" %>
+<%@ taglib prefix="nested" uri="http://struts.apache.org/tags-nested" %>
+<$ Page page = (Page) argument; $>
+
+<<$=htmlTag$>:html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title> <$= page.getTitle() $></title>
+
+</head>
+
+<body>
+
+<$Visitor visitor=new JSPVisitorImpl(htmlTag);$>
+<$ EList<Text> texts =page.getTexts();$>
+<$for (Text text : texts) { $>
+<$= text.accept(visitor) $>
+<$}$>
+<$ EList<Link> links =page.getLinks();$>
+<$for (Link link : links) { $>
+<$= link.accept(visitor) $>
+<$}$>
+<$ if(page.getForm()!=null){ $>
+<$= page.getForm().accept(visitor) $>
+<$}$>
+<<$=htmlTag$>:errors/>
+
+</body>
+</<$=htmlTag$>:html>

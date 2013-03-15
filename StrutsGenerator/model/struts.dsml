@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web:Website xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="dsml.web">
+  <Pages title="LoginPage" name="LoginPage">
+    <Form action="MyForm">
+      <FormElements xsi:type="web:Label" name="Login" value="Login :"/>
+      <FormElements xsi:type="web:TextField" name="LoginField" value="">
+        <Validator xsi:type="web:DateValidator"/>
+      </FormElements>
+      <FormElements xsi:type="web:Label" name="Password" value="Password Here"/>
+      <FormElements xsi:type="web:PasswordField" name="PasswordField"/>
+      <FormElements xsi:type="web:SubmitButton" name="Connect"/>
+      <Success SuccessPage="//@Pages.1"/>
+      <Error ErrorPage="//@Pages.2"/>
+    </Form>
+    <Texts value="Welcome to login page"/>
+  </Pages>
+  <Pages title="SuccessPage" name="SuccessPage">
+    <Texts value="You're connected :)"/>
+  </Pages>
+  <Pages title="ErrorPage" name="ErrorPage">
+    <Texts value="Error occured :("/>
+  </Pages>
+</web:Website>

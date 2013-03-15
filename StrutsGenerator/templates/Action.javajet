@@ -1,0 +1,32 @@
+<%@ jet package="dsml.struts.templates" imports="java.util.* java.lang.reflect.* dsml.struts.toolbox.*" class="ActionTemplate" startTag="<$" endTag="$>" %>
+<$ Class<?> arg = (Class<?>)argument; $>
+package dsml.struts.servletAction;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import org.apache.struts.action.Action;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+
+/**
+ * <$= arg.getSimpleName() $>Action
+ *
+ */
+
+import dsml.struts.actionForm.<$= arg.getSimpleName() $>ActionForm;
+
+public class <$= arg.getSimpleName() $>Action extends Action {
+    
+    public ActionForward execute(final ActionMapping pMapping, ActionForm pForm, 
+            final HttpServletRequest pRequest, final HttpServletResponse pResponse) 
+    {
+        <$= arg.getSimpleName() $>ActionForm form = (<$= arg.getSimpleName() $>ActionForm) pForm;
+        boolean failed = false;
+        
+        // TODO : Add Your Code Here !!!!
+        
+        return pMapping.findForward(failed ? "error" : "success");
+    }
+    
+}

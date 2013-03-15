@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:web="dsml.web" xmi:id="_-xwnUDHJEeK8WoY0_M3w3g" type="DSML" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="__X6BUDHJEeK8WoY0_M3w3g" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="__YIq0DHJEeK8WoY0_M3w3g" type="5001"/>
+    <children xmi:type="notation:Node" xmi:id="__afbQDHJEeK8WoY0_M3w3g" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="__afbRDHJEeK8WoY0_M3w3g" type="5002"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="__afbQTHJEeK8WoY0_M3w3g"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="__afbQjHJEeK8WoY0_M3w3g" fontName="Droid Sans"/>
+      <element xmi:type="web:Form" href="struts.dsml#//@Pages.0/@Form"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="__afbQzHJEeK8WoY0_M3w3g"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="__afbRTHJEeK8WoY0_M3w3g" type="3009">
+      <children xmi:type="notation:DecorationNode" xmi:id="__agCUDHJEeK8WoY0_M3w3g" type="5011"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="__afbRjHJEeK8WoY0_M3w3g"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="__afbRzHJEeK8WoY0_M3w3g" fontName="Droid Sans"/>
+      <element xmi:type="web:Text" href="struts.dsml#//@Pages.0/@Texts.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="__afbSDHJEeK8WoY0_M3w3g"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="__X6BUTHJEeK8WoY0_M3w3g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="__X6BUjHJEeK8WoY0_M3w3g" fontName="Droid Sans"/>
+    <element xmi:type="web:Page" href="struts.dsml#//@Pages.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__X6BUzHJEeK8WoY0_M3w3g"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="__YIq0THJEeK8WoY0_M3w3g" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="__YIq1THJEeK8WoY0_M3w3g" type="5001"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="__YIq0jHJEeK8WoY0_M3w3g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="__YIq0zHJEeK8WoY0_M3w3g" fontName="Droid Sans"/>
+    <element xmi:type="web:Page" href="struts.dsml#//@Pages.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__YIq1DHJEeK8WoY0_M3w3g" x="234"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="__YJR4DHJEeK8WoY0_M3w3g" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="__YOKYDHJEeK8WoY0_M3w3g" type="5001"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="__YJR4THJEeK8WoY0_M3w3g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="__YJR4jHJEeK8WoY0_M3w3g" fontName="Droid Sans"/>
+    <element xmi:type="web:Page" href="struts.dsml#//@Pages.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__YJR4zHJEeK8WoY0_M3w3g" x="454"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_-xwnUTHJEeK8WoY0_M3w3g"/>
+  <element xmi:type="web:Website" href="struts.dsml#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_Asrb4DHKEeK8WoY0_M3w3g" type="4003" source="__afbQDHJEeK8WoY0_M3w3g" target="__YIq0THJEeK8WoY0_M3w3g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_AssC8DHKEeK8WoY0_M3w3g" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AssC8THKEeK8WoY0_M3w3g" y="40"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_Asrb4THKEeK8WoY0_M3w3g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Asrb4jHKEeK8WoY0_M3w3g" fontName="Droid Sans"/>
+    <element xmi:type="web:Success" href="struts.dsml#//@Pages.0/@Form/@Success"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Asrb4zHKEeK8WoY0_M3w3g" points="[40, -7, -137, 21]$[175, -41, -2, -13]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AtLyMDHKEeK8WoY0_M3w3g" id="(0.7619047619047619,0.027888446215139442)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AtLyMTHKEeK8WoY0_M3w3g" id="(0.4625,0.08666666666666667)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_BM3X0DHKEeK8WoY0_M3w3g" type="4004" source="__afbQDHJEeK8WoY0_M3w3g" target="__YJR4DHJEeK8WoY0_M3w3g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BM3X1DHKEeK8WoY0_M3w3g" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_BM3X1THKEeK8WoY0_M3w3g" y="40"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_BM3X0THKEeK8WoY0_M3w3g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BM3X0jHKEeK8WoY0_M3w3g" fontName="Droid Sans"/>
+    <element xmi:type="web:Error" href="struts.dsml#//@Pages.0/@Form/@Error"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BM3X0zHKEeK8WoY0_M3w3g" points="[18, -2, -402, 26]$[428, -41, 8, -13]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BNdNsDHKEeK8WoY0_M3w3g" id="(0.8928571428571429,0.027888446215139442)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BNdNsTHKEeK8WoY0_M3w3g" id="(0.74375,0.08666666666666667)"/>
+  </edges>
+</notation:Diagram>

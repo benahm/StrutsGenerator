@@ -1,0 +1,21 @@
+<%@ jet package="dsml.struts.templates" imports=" java.lang.reflect.* dsml.struts.toolbox.* " class="DAOFactoryTemplate" startTag="<$" endTag="$>" %>
+<$ Class<?>[] classes=(Class<?>[]) argument; $>
+package dsml.struts.domain.dao;
+
+
+/**
+* DAOFactory
+*
+*/
+
+public class DAOFactory {
+<$ for(int i=0;i<classes.length;i++){ $>
+	
+	/**
+	*Create <$=classes[i].getSimpleName()$>DAO
+	*/
+	public static DAO<<$=classes[i].getName()$>> get<$= Tools.capitalize(classes[i].getSimpleName())$>DAO(){
+		return new <$=classes[i].getSimpleName()$>DAO();
+	}
+<$}$>
+}

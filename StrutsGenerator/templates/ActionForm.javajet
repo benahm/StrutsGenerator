@@ -1,0 +1,69 @@
+<%@ jet package="dsml.struts.templates" imports="java.lang.reflect.* dsml.struts.toolbox.* " class="ActionFormTemplate" startTag="<$" endTag="$>" %>
+
+<$ Class<?> arg = (Class<?>) argument; $>
+package dsml.struts.actionForm;
+
+import javax.servlet.http.HttpServletRequest;
+import org.apache.struts.action.ActionErrors;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionMessage;
+import org.apache.commons.validator.routines.RegexValidator;
+import org.apache.commons.validator.routines.TimeValidator;
+import org.apache.commons.validator.*;
+import <$=arg.getName()$>;
+<$ for (Field field : arg.getDeclaredFields()) { 
+if(field.getType().isEnum()) {$> 
+import <$= arg.getName() $>.<$= field.getType().getSimpleName() $>;  
+<$} } $>
+
+/**
+ * <$=arg.getSimpleName()$>ActionForm 
+ *
+ */
+public class <$=arg.getSimpleName()$>ActionForm extends ActionForm {
+
+
+	private static final long serialVersionUID = 1L;
+
+<$ for (Field field : arg.getDeclaredFields()) { $>
+	private <$= field.getType().getSimpleName() $> <$= field.getName() $>= <$= Tools.getDefaultValue(field.getType())$>;
+    
+<$ } $>
+	/* Getters */
+<$ for (Field field : arg.getDeclaredFields()) { $>
+	public <$= field.getType().getSimpleName() $> get<$= Tools.capitalize(field.getName()) $>() {
+        	return <$= field.getName() $>;
+	}
+<$ } $> 
+
+	/* Setters */
+<$ for (Field field : arg.getDeclaredFields()) { $>
+<$ if(field.getType().isEnum()) {$>
+	public void set<$= Tools.capitalize(field.getName()) $>(String <$= field.getName()$>Arg) {
+		<$= field.getName() $> = <$= field.getType().getSimpleName() $>.valueOf(<$= field.getName() $>Arg);
+	}
+<$} else{ $>
+	public void set<$= Tools.capitalize(field.getName()) $>(<$= field.getType().getSimpleName() $> <$= field.getName()$>Arg) {
+		<$= field.getName() $> = <$= field.getName() $>Arg;
+	}
+<$ }} $> 
+
+
+    public void reset(ActionMapping mapping, HttpServletRequest request) {
+<$ for (Field field : arg.getDeclaredFields()) { $>
+		<$= field.getName() $>= <$= Tools.getDefaultValue(field.getType())$> ;
+<$ } $>
+    }
+    	
+    public ActionErrors validate(ActionMapping mapping, HttpServletRequest request) {
+        ActionErrors errors = new ActionErrors();
+        
+        // Add your custom Validations here !
+ <$if(ValidationMap.get(arg.getSimpleName())!=null){$>       
+<$=ValidationMap.get(arg.getSimpleName()).getAll()$>
+ <$}$>
+        return errors;
+    }
+    
+}

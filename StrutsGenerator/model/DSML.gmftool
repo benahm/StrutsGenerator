@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmftool:Palette
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition"
+    title="uiPalette">
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="Link"
+      description="Create new LinkConnection">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="Page"
+      description="Create new Page">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="Form"
+      description="Create new Form">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="TextField"
+      description="Create new TextField">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="TextArea"
+      description="Create new TextArea">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="Select"
+      description="Create new Select">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="CheckBox"
+      description="Create new CheckBox">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="RadioButton"
+      description="Create new RadioButton">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="Text"
+      description="Create new Text">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="Hidden"
+      description="Create new Hidden">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="Label"
+      description="Create new Label">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="SubmitButton"
+      description="Create new SubmitButton">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="ResetButton"
+      description="Create new ResetButton">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="CancelButton"
+      description="Create new CancelButton">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="PasswordField"
+      description="Create new PasswordField">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="Success"
+      description="Create new SuccessConnection">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+  <tools
+      xsi:type="gmftool:CreationTool"
+      title="Error"
+      description="Create new ErrorConnection">
+    <smallIcon
+        xsi:type="gmftool:DefaultImage"/>
+    <largeIcon
+        xsi:type="gmftool:DefaultImage"/>
+  </tools>
+</gmftool:Palette>

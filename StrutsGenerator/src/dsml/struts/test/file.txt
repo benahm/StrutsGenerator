@@ -1,0 +1,3 @@
+		TimeValidator timeValidator$=new TimeValidator();
+		if(timeValidator.validate(this.$, "H:m")==null)
+			errors.add("$",new ActionMessage("errors.$.time","$"));

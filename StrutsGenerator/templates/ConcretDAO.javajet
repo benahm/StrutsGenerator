@@ -1,0 +1,165 @@
+<%@ jet package="dsml.struts.templates" imports=" java.lang.reflect.* dsml.struts.toolbox.* " class="ConcretDAOTemplate" startTag="<$" endTag="$>" %>
+<$ Class<?> clazz=(Class<?>) argument; $>
+package dsml.struts.domain.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import <$=clazz.getName()$>;
+/**
+* <$=clazz.getName()$>DAO
+*
+*/
+
+public  class <$=clazz.getSimpleName()$>DAO extends DAO<<$=clazz.getSimpleName()$>> {
+	
+	
+	private Connection connection = null;
+    private PreparedStatement ptmt = null;
+    private ResultSet resultSet = null;
+	
+	// getConnection
+	private Connection getConnection() throws SQLException {
+                Connection conn;
+                conn = ConnectionFactory.getInstance().getConnection();
+                return conn;
+    }
+	
+	
+	/**
+	 * Permet de récupérer un objet via son ID
+	 * @param id
+	 * @return
+	 */
+	public <$=clazz.getSimpleName()$> find(long id){
+		// ADD YOUR CODE HERE!!
+		try {
+			String queryString = "SELECT";
+			connection = getConnection();
+			ptmt = connection.prepareStatement(queryString);
+			resultSet = ptmt.executeQuery();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (resultSet != null)
+					resultSet.close();
+				if (ptmt != null)
+					ptmt.close();
+				if (connection != null)
+					connection.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+
+		}
+		
+		return null;
+	}
+	
+	/**
+	 * Permet de créer une entrée dans la base de données
+	 * par rapport à un objet
+	 * @param obj
+	 */
+	public  <$=clazz.getSimpleName()$> create(<$=clazz.getSimpleName()$> obj){
+		// ADD YOUR CODE HERE!!
+		try {
+			String queryString = "INSERT_QUERY";
+			connection = getConnection();
+			ptmt = connection.prepareStatement(queryString);
+			<$int i=0;
+			 for (Field field : clazz.getDeclaredFields()) { if(field.getType()==boolean.class){$>
+			ptmt.setBoolean(<$=++i$>, obj.get<$= Tools.capitalize(field.getName()) $>()); <$}else {$>
+			ptmt.setString(<$=++i$>, obj.get<$= Tools.capitalize(field.getName()) $>().toString());<$ }} $>
+			
+			ptmt.executeUpdate();
+			System.out.println("Data Added Successfully");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (ptmt != null)
+					ptmt.close();
+				if (connection != null)
+					connection.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+
+		}
+		
+		return null;
+	}
+	
+	/**
+	 * Permet de mettre à jour les données d'une entrée dans la base 
+	 * @param obj
+	 */
+	public  <$=clazz.getSimpleName()$> update(<$=clazz.getSimpleName()$> obj){
+		// ADD YOUR CODE HERE!!
+		try {
+			String queryString = "QUERY";
+			connection = getConnection();
+			ptmt = connection.prepareStatement(queryString);
+			<$ i=0;
+			 for (Field field : clazz.getDeclaredFields()) { if(field.getType()==boolean.class){$>
+			ptmt.setBoolean(<$=++i$>, obj.get<$= Tools.capitalize(field.getName()) $>()); <$}else {$>
+			ptmt.setString(<$=++i$>, obj.get<$= Tools.capitalize(field.getName()) $>().toString());<$ }} $>
+			
+			ptmt.executeUpdate();
+			System.out.println("Table Updated Successfully");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (ptmt != null)
+					ptmt.close();
+				if (connection != null)
+					connection.close();
+			}
+
+			catch (SQLException e) {
+				e.printStackTrace();
+			} catch (Exception e) {
+				e.printStackTrace();
+
+			}
+		}
+		return null;
+	}
+	/**
+	 * Permet la suppression d'une entrée de la base
+	 * @param obj
+	 */
+	public  void delete(<$=clazz.getSimpleName()$> obj){
+		// ADD YOUR CODE HERE!!
+		try {
+			String queryString = "DELETE_QUERY";
+			connection = getConnection();
+			ptmt = connection.prepareStatement(queryString);
+			ptmt.executeUpdate();
+			System.out.println("Data deleted Successfully");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (ptmt != null)
+					ptmt.close();
+				if (connection != null)
+					connection.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+
+		}
+		
+	}
+}

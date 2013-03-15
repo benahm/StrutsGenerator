@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web:Website xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="dsml.web">
+  <Pages title="TheTitleOfThePage" name="page">
+    <Form action="MyFormTest">
+      <FormElements xsi:type="web:TextField" name="TextField" value="its a textField value">
+        <Validator xsi:type="web:Required"/>
+        <Validator xsi:type="web:StringLengthValidator" max="10"/>
+        <Validator xsi:type="web:TypeValidator" type="float"/>
+        <Validator xsi:type="web:DateValidator"/>
+        <Validator xsi:type="web:EmailValidator"/>
+        <Validator xsi:type="web:TimeValidator"/>
+        <Validator xsi:type="web:GreaterThanValidator"/>
+        <Validator xsi:type="web:URLValidator"/>
+        <Validator xsi:type="web:RegexValidator"/>
+      </FormElements>
+      <FormElements xsi:type="web:Label" name="LabelName" value="Labelvalue"/>
+      <FormElements xsi:type="web:PasswordField" name="Password" value="pass">
+        <Validator xsi:type="web:Required"/>
+      </FormElements>
+      <FormElements xsi:type="web:Select" name="select" value="no selected value">
+        <Items value="item1"/>
+        <Items value="item2"/>
+      </FormElements>
+      <FormElements xsi:type="web:RadioButton" name="Name" value="radioButton">
+        <Items value="item1"/>
+        <Items value="item2"/>
+        <Items/>
+      </FormElements>
+      <FormElements xsi:type="web:Hidden" name="Hudden" value="I'm Hidden"/>
+      <FormElements xsi:type="web:CheckBox" name="check" value="Check Here!!"/>
+      <FormElements xsi:type="web:TextArea" name="textArea">
+        <Validator xsi:type="web:RegexValidator"/>
+      </FormElements>
+      <FormElements xsi:type="web:ResetButton" name="doreset" value="reset1"/>
+      <FormElements xsi:type="web:Label" name="otherLabel" value="Other value label"/>
+      <FormElements xsi:type="web:ResetButton" name="resetb" value="reset"/>
+      <FormElements xsi:type="web:CancelButton" name="cancelb" value="cancel"/>
+      <FormElements xsi:type="web:SubmitButton" name="submitb" value="submit"/>
+    </Form>
+    <Texts value="this is a text in a page yeah "/>
+    <Texts value="OtherText"/>
+    <Links value="Link to other page"/>
+  </Pages>
+  <Pages title=" just a page with a link" name="PageWithLink">
+    <Links LinkedPage="//@Pages.1" value="go to other page"/>
+  </Pages>
+  <Pages title="Error" name="PageError">
+    <Texts value="Error occured :("/>
+  </Pages>
+  <Pages title="OtherPageWithForm" name="Page2"/>
+</web:Website>

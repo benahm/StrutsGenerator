@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/StrutsProjectNew/model/DSML.genmodel
+gmf_dashboard/domainModel=platform\:/resource/StrutsProjectNew/model/DSML.ecore
+gmf_dashboard/generationModel=platform\:/resource/StrutsProjectNew/model/DSML.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/StrutsProjectNew/model/DSML.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/StrutsProjectNew/model/DSML.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/StrutsProjectNew/model/DSML.gmftool

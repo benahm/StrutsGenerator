@@ -1,0 +1,26 @@
+<%@ jet package="dsml.struts.templates" imports="java.util.* org.eclipse.emf.common.util.* dsml.struts.toolbox.* dsml.visitor.Visitor dsml.visitor.impl.* dsml.web.*" class="ResourcesTemplate" startTag="<$" endTag="$>" %>
+<$ Website website = (Website) argument; $>
+<$ for(Page page : website.getPages()){ $>
+<$Visitor visitor=new ResourceVisitorImpl(page.getName());$>
+errors.header=<ul>
+errors.prefix=<li style="color: red;">
+errors.suffix=</li>
+errors.footer=</ul>
+
+<$ String entry; $>
+<$ EList<Text> texts =page.getTexts();
+for (Text text : texts) { $>
+<$ entry=text.accept(visitor);$>
+<$=entry $> 
+<$}$>
+<$ EList<Link> links =page.getLinks();
+for (Link link : links) { $>
+<$ entry=link.accept(visitor);$>
+<$=entry $> 
+<$}$>
+<$ Form form=page.getForm(); $>
+<$ if(form!=null){
+  entry=form.accept(visitor);$>
+<$ System.out.println(ResourceMap.hashMap);$>
+<$=entry$>
+<$}}$>
